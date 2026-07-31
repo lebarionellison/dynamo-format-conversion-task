@@ -1,0 +1,6 @@
+title = "Corrupted Multi-Stream Archive Reconstruction and Conversion"
+description = "Diagnose, repair, and convert a structurally malformed multi-format stream archive into a clean normalized JSON and binary asset set."
+category = "File and Media Operations"
+subcategory = "File format conversion"
+time_estimate_minutes = 60
+max_run_time_seconds = 300
