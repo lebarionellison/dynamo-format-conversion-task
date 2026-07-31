@@ -1,5 +1,4 @@
 import os
-import hashlib
 import json
 import sys
 
@@ -15,11 +14,15 @@ def test_outputs():
         with open(output_jsonl, "r") as f:
             lines = f.readlines()
             records = [json.loads(line) for line in lines]
-        if len(records) == 0:
-            print("FAIL: Record set is empty.")
+        if len(records) != 3:
+            print(f"FAIL: Expected 3 records, found {len(records)}.")
             sys.exit(0)
     except Exception as e:
-        print(f"FAIL: Invalid JSONL formatting: {e}")
+        print(f"FAIL: Invalid JSONL formatting or parsing error: {e}")
+        sys.exit(0)
+
+    if os.path.getsize(output_bin) == 0:
+        print("FAIL: Payload binary stream is empty.")
         sys.exit(0)
 
     print("PASS: All structural conversions and verifications succeeded.")
