@@ -1,6 +1,6 @@
-title = "Corrupted Multi-Stream Archive Reconstruction and Conversion"
-description = "Diagnose, repair, and convert a structurally malformed multi-format stream archive into a clean normalized JSON and binary asset set."
-category = "File and Media Operations"
-subcategory = "File format conversion"
-time_estimate_minutes = 60
+title = "Forensic Reconstruction of a Corrupted Multi-Stream Binary Container"
+description = "Recover a uniquely reconstructable undocumented binary container by inferring corrupted stream boundaries, reversing deterministic corruption operations, and producing canonical JSONL metadata and recovered binary payload output."
+category = "Reverse Engineering"
+subcategory = "Binary / Undocumented Format Reverse Engineering"
+time_estimate_minutes = 120
 max_run_time_seconds = 300
