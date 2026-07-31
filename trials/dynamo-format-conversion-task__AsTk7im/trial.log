@@ -1,0 +1,13 @@
+Trial dynamo-format-conversion-task__AsTk7im failed: Docker compose command failed for environment dynamo-format-conversion-task. Command: docker compose --project-name dynamo-format-conversion-task__astk7im__env --project-directory C:\Users\lebar\projects\dynamo\dynamo-format-conversion-task\environment -f C:\Users\lebar\AppData\Local\Temp\tmpk9bmmx9g\dynamo-format-conversion-task__AsTk7im__env-docker-compose-resources.json -f C:\Users\lebar\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\lebar\AppData\Local\Temp\tmpuiixv_s_\docker-compose-environment.json -f C:\Users\lebar\AppData\Local\Temp\tmplwxiewoe\docker-compose-mounts.json build. Return code: 125. Stdout: unknown flag: --project-name
+
+Usage:  docker [OPTIONS] COMMAND [ARG...]
+
+Run 'docker --help' for more information
+. Stderr: None. 
+Collecting main service artifacts
+Docker compose down failed: Docker compose command failed for environment dynamo-format-conversion-task. Command: docker compose --project-name dynamo-format-conversion-task__astk7im__env --project-directory C:\Users\lebar\projects\dynamo\dynamo-format-conversion-task\environment -f C:\Users\lebar\AppData\Local\Temp\tmpk9bmmx9g\dynamo-format-conversion-task__AsTk7im__env-docker-compose-resources.json -f C:\Users\lebar\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\lebar\AppData\Local\Temp\tmpuiixv_s_\docker-compose-environment.json -f C:\Users\lebar\AppData\Local\Temp\tmplwxiewoe\docker-compose-mounts.json down --rmi local --volumes --remove-orphans. Return code: 125. Stdout: unknown flag: --project-name
+
+Usage:  docker [OPTIONS] COMMAND [ARG...]
+
+Run 'docker --help' for more information
+. Stderr: None. 

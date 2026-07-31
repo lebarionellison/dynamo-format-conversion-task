@@ -1,0 +1,5 @@
+name: dynamo-format-conversion-task
+version: 0.1.0
+description: "File and Media Operations task for Project Dynamo format conversion."
+tasks:
+  - path: .
