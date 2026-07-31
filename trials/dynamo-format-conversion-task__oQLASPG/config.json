@@ -1,0 +1,10 @@
+{
+    "task": {
+        "path": "."
+    },
+    "trial_name": "dynamo-format-conversion-task__oQLASPG",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "claude-3-5-sonnet"
+    }
+}

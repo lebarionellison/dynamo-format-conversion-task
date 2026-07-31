@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "C:\Users\lebar\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 351, in run
+    await self._prepare()
+  File "C:\Users\lebar\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 385, in _prepare
+    await self._setup_agent_environment()
+  File "C:\Users\lebar\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 1148, in _setup_agent_environment
+    await self._start_agent_environment()
+  File "C:\Users\lebar\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 1154, in _start_agent_environment
+    await asyncio.wait_for(
+    ...<4 lines>...
+    )
+  File "C:\Users\lebar\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\asyncio\tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\lebar\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 891, in start
+    await self._run_docker_compose_command(["build"])
+  File "C:\Users\lebar\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker.py", line 656, in _run_docker_compose_command
+    raise RuntimeError(
+    ...<5 lines>...
+    )
+RuntimeError: Docker compose command failed for environment dynamo-format-conversion-task. Command: docker compose --project-name dynamo-format-conversion-task__nhujgbq__env --project-directory C:\Users\lebar\projects\dynamo\dynamo-format-conversion-task\environment -f C:\Users\lebar\AppData\Local\Temp\tmpm2h4xed8\dynamo-format-conversion-task__nHUjGbq__env-docker-compose-resources.json -f C:\Users\lebar\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\lebar\AppData\Local\Temp\tmp01n33cu_\docker-compose-environment.json -f C:\Users\lebar\AppData\Local\Temp\tmpm4xn1ak8\docker-compose-mounts.json build. Return code: 1. Stdout:  Image dynamo-format-conversion-task__nhujgbq__env-main Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 673B done
+#1 DONE 0.0s
+
+#2 [internal] booting buildkit
+#2 pulling image moby/buildkit:buildx-stable-1
+#2 pulling image moby/buildkit:buildx-stable-1 27.5s done
+#2 ERROR: request returned 500 Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.54/images/create?fromImage=docker.io%2Fmoby%2Fbuildkit&tag=buildx-stable-1, check if the server supports the requested API version
+------
+ > [internal] booting buildkit:
+------
+request returned 500 Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.54/images/create?fromImage=docker.io%2Fmoby%2Fbuildkit&tag=buildx-stable-1, check if the server supports the requested API version
+
+. Stderr: None. 

@@ -1,0 +1,8 @@
+Trial dynamo-format-conversion-task__pW3yZpT failed: Docker compose command failed for environment dynamo-format-conversion-task. Command: docker compose --project-name dynamo-format-conversion-task__pw3yzpt__env --project-directory C:\Users\lebar\projects\dynamo\dynamo-format-conversion-task\environment -f C:\Users\lebar\AppData\Local\Temp\tmp98p8i0p2\dynamo-format-conversion-task__pW3yZpT__env-docker-compose-resources.json -f C:\Users\lebar\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\lebar\AppData\Local\Temp\tmpksetmuud\docker-compose-environment.json -f C:\Users\lebar\AppData\Local\Temp\tmpawvcs9yx\docker-compose-mounts.json build. Return code: 1. Stdout:  Image dynamo-format-conversion-task__pw3yzpt__env-main Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 673B done
+#1 DONE 0.0s
+failed to solve: write /var/lib/desktop-containerd/daemon/io.containerd.metadata.v1.bolt/meta.db: read-only file system
+
+. Stderr: None. 
+Collecting main service artifacts
